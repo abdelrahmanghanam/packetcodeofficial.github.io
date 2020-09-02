@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="container">
+    <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                <a href="https://www.linkedin.com/in/abdelrahman-ghanam-a92ab4175/">Linked In</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="https://github.com/abdelrahmanghanam/dataStructure">Git Hup</a>
+                   </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                <div> ABDELRAHMAN GHANAM </div>
+                </div>
+            </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                 <div class="portofolio-img-back" style="background-image:url(images/education.jpg)">`</div>
+                 <div class="img-text-rapper">
+                     <div class="logo-wrapper">
+                         <img src="images/logos/education.png">
+                     </div>
+                     <div class="subtitle">
+                         3rd year computer science student
+                         at Universities of Canada in Egypt.
+                     </div>
+                 </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portofolio-img-back" style="background-image:url(images/skills.jpg)">`</div>
+                <div class="img-text-rapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/skills.png">
+                    </div>
+                    <div class="subtitle">
+                        communication skills, web development, java programming, and databases
+                    </div>
+                </div>
+           </div>
+
+           <div class="portfolio-item-wrapper">
+                 <div class="portofolio-img-back" style="background-image:url(images/achievments.jpg)">`</div>
+                 <div class="img-text-rapper">
+                     <div class="logo-wrapper">
+                         <img src="images/logos/achievments.png">
+                     </div>
+                     <div class="subtitle">
+                         one of top 100 students at Egyptian thanwya amma 2017/2018 - CS top student 2018,2019
+                     </div>
+                 </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portofolio-img-back" style="background-image:url(images/backend.jpg)">`</div>
+                <div class="img-text-rapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/backend.png">
+                    </div>
+                    <div class="subtitle">
+                        Java, C, C#, JavaScrip, SQL, CSS and HTML
+                    </div>
+                </div>
+           </div>
+
+           <div class="portfolio-item-wrapper">
+                 <div class="portofolio-img-back" style="background-image:url(images/group.jpg)">`</div>
+                 <div class="img-text-rapper">
+                     <div class="logo-wrapper">
+                         <img src="images/logos/group.png">
+                     </div>
+                     <div class="subtitle">
+                         Karim Elbowety and Omar Eltouny
+                     </div>
+                 </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portofolio-img-back" style="background-image:url(images/project.jpg)">`</div>
+                <div class="img-text-rapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/project.png">
+                    </div>
+                    <div class="subtitle">
+                        Univeo.org frontend developer, developed some backends in SAP Systems using ABAP
+                    </div>
+                </div>
+           </div>
+
+
+        </div>
+    </div>
+</div>
+    
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+     portfolioItems.forEach(portfolioItem => {
+         portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add('img-darken');
+         })
+
+         portfolioItem.addEventListener('mouseout', () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+         })
+     });
+</script>
+</html>
